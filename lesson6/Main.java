@@ -1,12 +1,11 @@
-public class Main{
-  public static void main(String[] args) {
-    dowarusa();
-    dokogame();
-    callDeae();
-    showMondokoro();
+import comment.Zenhan;
 
-  }
-  public static void dowarusa() {
-    System.out.println("きなこでござる。食えませんがの。");
+public class Main{
+  public static void main(String[] args) throws Exception {
+    Zenhan.dowarusa();
+    Zenhan.doTogame();
+    comment.Kouhan.callDeae();
+    comment.Kouhan.showMondokoro();
+
   }
 }
