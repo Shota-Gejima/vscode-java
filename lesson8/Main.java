@@ -1,11 +1,9 @@
 public class Main{
   public static void main(String[] args){
-    
-    Cleric c = new Cleric();
-    c.name = "げじ";
 
+    Cleric c = new Cleric();
     c.selfAid();
-    int returnRecoveryActual = c.pray(2);
-    System.out.println("mpが" + returnRecoveryActual + "回復した!");
+    int ans = c.pray(2);
+    System.out.println("実際に回復した量は" + ans + "ポイントで、最終mp数は" + c.mp );
   }
 }
