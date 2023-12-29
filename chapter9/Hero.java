@@ -4,15 +4,16 @@ public class Hero{
   Sword sword;
 
   public void attack(){
-      System.out.println(this.name + "は" + this.sword.name + "で攻撃した！");
-      System.out.println("敵に5ポイントのダメージを与えた！");
-  }
-  public Hero(String name){
-    this.hp = 100;
-    this.name = name;
-  }
-  public Hero(){
-    this("ダミー");
+    System.out.println(this.name + "は、攻撃した!");
+    System.out.println("敵に5ポイントのダメージをあたえた！");
+    System.out.println(this.name + "は、" + this.sword.name + "で、攻撃した！");
   }
 
+  public Hero(String h){
+    this.hp = 100;
+    this.name = h;
+  }
+  public Hero(){
+    this.name = "ダミー";
+  }
 }

@@ -1,4 +1,4 @@
 public class Sword{
-  String name;
+  String name ;
   int damage;
 }
