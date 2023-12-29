@@ -1,5 +1,16 @@
-public class SuperHero extends Hero {
+public class SuperHero extends Hero{
   boolean flying;
+
+  public void attack(Matango m){
+    super.attack(m);
+    if (this.flying == true){
+      super.attack(m);
+    }
+  }
+
+  public void run(){
+    System.out.println(this.name + "は、撤退した！");
+  }
 
   public void fly(){
     this.flying = true;
@@ -11,19 +22,7 @@ public class SuperHero extends Hero {
     System.out.println("着地した");
   }
 
-  public void run(){
-    System.out.println(this.name + "は、撤退した!");
-  }
-
-  public void attack(Matango m){
-    System.out.println(this.name + "の攻撃");
-    m.hp -= 5;
-    System.out.println("5ポイントのダメージをあたえた");
-    if (this.flying){
-      System.out.println(this.name + "の攻撃！");
-      m.hp -= 5;
-      System.out.println("5ポイントのダメージをあたえた！");
-    }
-  }
+  public SuperHero(){
+    super("ゲジ");
   }
 }
