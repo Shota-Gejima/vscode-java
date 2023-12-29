@@ -1,12 +1,13 @@
 public class Thief{
   String name;
-  int hp = 40;
-  int mp = 5;
+  int hp;
+  int mp;
 
   public Thief(String name, int hp, int mp){
     this.name = name;
     this.hp = hp;
     this.mp = mp;
+    System.out.println(name + "のhpは" + hp + "で、mpは" + mp + "です。");
   }
 
   public Thief(String name, int hp){
