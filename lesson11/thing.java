@@ -1,4 +1,4 @@
-public interface thing {
+public interface Thing {
   double getWeight();
   void setweight(double weight);
   }
