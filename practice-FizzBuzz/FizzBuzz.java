@@ -1,8 +1,9 @@
+import java.util.*;
 public class FizzBuzz {
   public static void main(String[] args){
     // 好きな数字
     System.out.println("好きな数字を入力してください");
-    int num = new java.util.Scanner(System.in).nextInt();
+    int num = new Scanner(System.in).nextInt();
     if (num%(3*5)==0){
       System.out.println("FizzBuzz");
     } else if (num%3==0){
@@ -28,7 +29,7 @@ public class FizzBuzz {
     for (int s=1; s<=3; s++){
       System.out.println("あと"+(4-s)+"回");
       System.out.println("好きな数字を入力してください");
-      int numLike = new java.util.Scanner(System.in).nextInt();
+      int numLike = new Scanner(System.in).nextInt();
       if (numLike%(3*5)==0){
         System.out.println("FizzBuzz");
       } else if (numLike%3==0){
