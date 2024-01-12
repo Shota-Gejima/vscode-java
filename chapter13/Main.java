@@ -6,7 +6,7 @@ public class Main{
     // System.out.println(h.name);
 
     // Heroクラスのセッターメソッドで代入し、ゲッターメソッドで呼び出す
-    h.setName("すがわら");
+    h.setName("ミナト");
     System.out.println(h.getName());
   }
 }
