@@ -1,4 +1,4 @@
-// pacage privateのためソースファイルとクラス名が違ってもいい
+// package privateのためソースファイルとクラス名が違ってもいい
 class Human{
   private String name;
 

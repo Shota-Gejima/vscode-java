@@ -1,8 +1,8 @@
 public class Character{
-  String name;
+  String name = "スガワラ";
   int hp;
 
-  piblic void run(){
+  public void run(){
     System.out.println(this.name + "は逃げ出した");
   }
 
