@@ -1,6 +1,6 @@
 public class Main{
   public static void main(String[] args){
-    Hero h = new Hero();
+    Human h = new Human();
     // Heroクラスでnameをprivate宣言しているためフィールドに直接代入できない
     // h.name = "ミナト";
     // System.out.println(h.name);

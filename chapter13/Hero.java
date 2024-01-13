@@ -1,4 +1,5 @@
-public class Hero{
+// pacage privateのためソースファイルとクラス名が違ってもいい
+class Human{
   private String name;
 
   public String getName(){
