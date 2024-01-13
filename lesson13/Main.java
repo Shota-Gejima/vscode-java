@@ -4,10 +4,11 @@ public class Main {
     Hero h = new Hero();
     Wand w = new Wand();
     Wizard wz = new Wizard();
-
     h.hp = 100;
-    wz.setWand().setPower(2.0);
-    wz.heal(h);
+    w.setPower(2.0);
+    wz.setWand().setName("ミナト");
+    wz.getWand().getName();
+    // wz.heal(h);
     // System.out.println(w.getPower());
   }
 }
