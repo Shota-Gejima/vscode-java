@@ -1,6 +1,7 @@
 public class Main {
   public static void main(String[] args){
-    FizzBuzz fb = new FizzBuzz();
-    fb.useForLoop();
+    FizzBuzz2 fb2 = new FizzBuzz2();
+    fb2.use();
+    fb2.useForLoop();
   }
 }
