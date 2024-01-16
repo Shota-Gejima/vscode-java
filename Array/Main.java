@@ -5,5 +5,14 @@ public class Main{
     for (int i: heights){
       System.out.println(i);
     }
+
+    int[] num = new int[2];
+    num[0] = 10;
+    num[1] = 20;
+
+    int result = num[0] + num[1];
+    System.out.println(result);
   }
+
+
 }
