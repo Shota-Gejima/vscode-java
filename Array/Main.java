@@ -5,6 +5,8 @@ public class Main{
     for (int num : point){
       System.out.println(num);
     }
-
+    for (int i = 2; i <= 10; i+=2) {
+      System.out.println(i);
+    }
   }
 }
