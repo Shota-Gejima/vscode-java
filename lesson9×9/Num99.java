@@ -1,12 +1,10 @@
-// 九九を作成
-public class Num99{
+class Main {
   public static void main(String[] args){
-    int num;
-    for (int i=1; i< 10; i++){
-      for (int y=1; y<10; y++){
-        System.out.print((i*y) + " ");
+    for (int i=1; i<10; i++){
+      for (int s=1; s<10; s++){
+        System.out.print(i * s + " ");
       }
-      System.out.println("");
+      System.out.println(" ");
     }
   }
 }
