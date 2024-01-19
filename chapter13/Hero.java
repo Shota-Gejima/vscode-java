@@ -28,7 +28,4 @@ class Human{
 
     this.name = name;
   }
-    
-
-
 }
