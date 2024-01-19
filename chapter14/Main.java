@@ -11,5 +11,10 @@ public class Main {
     System.out.println(o3);
     // 14-3
     e.printAnything("やっほー");
+
+    Hero h = new Hero();
+    h.name = "ミナト";
+    h.hp = 100;
+    System.out.println(h.toString());
   }
 }
