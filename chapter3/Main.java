@@ -45,7 +45,13 @@ public class Main {
       } else {
         System.out.print("現在"+i+"週目");
       }
-      
+    }
+    // コード3-9 九九
+    for (int x=1; x<=9; x++){
+      for (int y=1; y<=9; y++){
+        System.out.print(x*y + " ");
+      }
+      System.out.println(" ");
     }
   }
 } 
