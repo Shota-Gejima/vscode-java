@@ -1,15 +1,9 @@
 public class Main{
   public static void main(String[] args){
-    int sansu = 20;
-    int kokugo = 30;
-    int rika = 40;
-    int eigo = 50;
-    int syakai = 80;
-    
-    int sum = sansu + kokugo + rika + syakai +eigo;
-
-    int avg = sum / 5;
-    System.out.println("合計点" + sum);
-    System.out.println("平均点" + avg);
+    int [] scores = {10,20,30,40,50};
+    int sum = scores[0] + scores[1] + scores[2] + scores[3] + scores[4]; 
+    int avg = sum / scores.length;
+    System.out.println("合計点は"+ sum);
+    System.out.println("平均点は"+ avg);
   }
 }
