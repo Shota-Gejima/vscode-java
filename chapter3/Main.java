@@ -53,5 +53,10 @@ public class Main {
       }
       System.out.println(" ");
     }
+    String nameA = "太郎";
+
+    if (nameA.equals("夕日")){
+      System.out.println("同じ名前です");
+    } else {System.out.println("違う名前です");}
   }
 } 
