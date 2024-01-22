@@ -18,7 +18,9 @@ public class Main {
       break;
     }
     System.out.println("もう空きません");
-    int age =18;
-    if (!(age < 18)){System.out.println("18歳未満です");}
+    int age = 17;
+    if (age > 10 && age <18){
+      System.out.println("10歳より大きく、18歳未満です");
+    } else {System.out.println("それ以外です");}
   } 
 }
