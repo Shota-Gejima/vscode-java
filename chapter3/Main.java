@@ -22,5 +22,30 @@ public class Main {
     if (age > 10 && age <18){
       System.out.println("10歳より大きく、18歳未満です");
     } else {System.out.println("それ以外です");}
-  } 
-}
+    // switch文
+    int numFortune = new java.util.Random().nextInt(4);
+    switch (numFortune){
+      case 1:
+      System.out.println("大吉");
+      break;
+      case 2:
+      System.out.println("中吉");
+      break;
+      case 3:
+      System.out.println("吉");
+      break;
+      case 4:
+      System.out.println("凶");
+      break;
+    }
+    // for文
+    for (int i=1; i <= 3; i++){
+      if (i!=3){
+        System.out.print("現在"+i+"週目→");
+      } else {
+        System.out.print("現在"+i+"週目");
+      }
+      
+    }
+  }
+} 
