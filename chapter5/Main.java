@@ -17,7 +17,11 @@ public class Main {
     for (int i: array){
       System.out.println(i);
     }
-
+    // コード5-13呼び出し先の情報が更新されている
+    int[] num = makeArray(3);
+    for (int a: num){
+      System.out.print(a + " ");
+    }
   }
   public static void hello(String name, String word){
     System.out.println(name+"さん"+word);
@@ -36,5 +40,13 @@ public class Main {
     for (int i=0; i < array.length; i++){
       array[i]++;
     }
+  }
+  // 戻り値に配列を用いる
+  public static int [] makeArray(int size){
+    int [] newArray = new int[size];
+    for (int i=0; i<newArray.length; i++){
+      newArray[i] = i;
+    }
+    return newArray;
   }
 }
