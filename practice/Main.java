@@ -1,39 +1,30 @@
+import java.util.Scanner;
 public class Main {
   public static void main(String[] args){
-    int [] num = new int[20];
-    // 配列の要素に5ずつ加算して代入
-    for (int i=0; i<num.length; i++){
-      num [i] = i * 5;
-    }
-    // 配列の仮表示
-    for (int m=0; m<num.length; m++){
-      System.out.print(num[m]);
-      if (m<20-1){
-        System.out.print(",");
+    // 問題1 以下の整数型の配列が与えられたとき、配列内の奇数の合計を計算して表示するJavaのプログラムを書いてください。
+    // int[] numbers = {1, 5, 8, 3, 6, 9, 7, 2, 4, 11};
+    int [] numbers = {1,5,8,3,6,9,7,2,4,11};
+    int ans = 0;
+    for (int i=0; i<numbers.length; i++){
+      if (numbers[i]%2!=0){
+        ans += numbers[i];
       }
     }
-    System.out.println();
-    // [0]~[10]の奇数の値を取り出す
-    System.out.print("奇数:");
-    for (int i=0; i<=10; i++){
-      if (num[i]%2 == 0){
-        System.out.print(num[i]);
-        if (i<10-1){
-          System.out.print(",");
-        }
-      }
+    System.out.println(ans);
+    // 問題2 ユーザーに10個の整数を入力させ、それらの整数の合計と平均を計算して表示するJavaのプログラムを書いてください。
+    int[] array = new int[10];
+    for (int i=0; i<array.length; i++){
+      System.out.println("1~9の好きな数じを入力してください");
+      int num = new Scanner(System.in).nextInt();
+      array[i] = num;
+      System.out.println("残り"+(array.length-(i+1))+"個");
     }
-    System.out.println();
-
-    // [11]~[19]の偶数の値を取り出す
-    System.out.print("偶数:");
-    for (int i=11; i<=19; i++){
-      if (num[i]%2==0){
-        System.out.print(num[i]);
-        if (i<19-1){
-          System.out.print(",");
-        }
-      }
+    int total=0;
+    for (int i: array){
+      total += i;
     }
+    // キャスト演算子
+    double avg = (double)total/array.length;
+    System.out.println(array.length+"合計は"+total+"で、平均は"+avg);
   }
 }
