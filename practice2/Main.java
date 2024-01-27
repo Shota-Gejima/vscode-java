@@ -1,4 +1,6 @@
+import java.io.UnsupportedEncodingException;
 public class Main{
+  
   public static void main(String[] args){
     // 要素数20の配列を宣言し、要素に0から5ずつ傘㎜して代入させる
     int[] num = new int[20];
@@ -53,6 +55,8 @@ public class Main{
     final double PI = (int)3.14;
     double radius = 3.0;
     System.out.println("半径3.0の円の面積は"+radius*radius*PI);
-
-  }
-}
+    // 例題6 ユーザーに名前を尋ね、入力された名前を使って挨拶メッセージを表示するJavaのコードを書いてください。
+    System.out.println("名前を教えて下さい");
+    String userName = new java.util.Scanner(System.in).nextLine();
+    System.out.println(userName + "さん、こんにちは！");
+    // 例題7 ユーザーに身長（メートル）と体重（キログラム）を入力させ、BMI（Body Mass Index）を計算して表示するJavaのプログラムを書いてください。BMIの計算式はBMI = 体重 / (身長 * 身長)です。
