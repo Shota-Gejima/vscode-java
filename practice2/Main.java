@@ -49,6 +49,10 @@ public class Main{
     // 例題4 変数 num1 と num2 にそれぞれ整数 5 と 10 を代入し、それらの変数を足して結果を表示するJavaのコードを書いてください。
     int num1 = 5; int num2 = 10;
     System.out.println("num1+num2="+ (num1 + num2));
-    
+    // 例題5 半径が 3.0 の円の面積を計算し、結果を表示するJavaのコードを書いてください。円周率は3.14とします。
+    final double PI = (int)3.14;
+    double radius = 3.0;
+    System.out.println("半径3.0の円の面積は"+radius*radius*PI);
+
   }
 }
