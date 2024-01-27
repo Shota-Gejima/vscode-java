@@ -1,6 +1,5 @@
-import java.io.UnsupportedEncodingException;
-public class Main{
-  
+import java.util.Scanner;
+public class Main{  
   public static void main(String[] args){
     // 要素数20の配列を宣言し、要素に0から5ずつ傘㎜して代入させる
     int[] num = new int[20];
@@ -60,3 +59,11 @@ public class Main{
     String userName = new java.util.Scanner(System.in).nextLine();
     System.out.println(userName + "さん、こんにちは！");
     // 例題7 ユーザーに身長（メートル）と体重（キログラム）を入力させ、BMI（Body Mass Index）を計算して表示するJavaのプログラムを書いてください。BMIの計算式はBMI = 体重 / (身長 * 身長)です。
+    System.out.println("身長を入力してください");
+    double height = new Scanner(System.in).nextDouble();
+    System.out.println("体重を入力してください");
+    double weight = new Scanner(System.in).nextDouble();
+    double bmi = weight/(height*height);
+    System.out.println("BMIの数値は"+bmi);
+  }
+}
