@@ -45,7 +45,10 @@ public class Main{
         System.out.print(",");
       }
     }
-
-
+    System.out.println();
+    // 例題4 変数 num1 と num2 にそれぞれ整数 5 と 10 を代入し、それらの変数を足して結果を表示するJavaのコードを書いてください。
+    int num1 = 5; int num2 = 10;
+    System.out.println("num1+num2="+ (num1 + num2));
+    
   }
 }
