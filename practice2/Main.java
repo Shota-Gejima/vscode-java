@@ -1,23 +1,38 @@
 public class Main{
   public static void main(String[] args){
-    int [] num = new int[10];
-    for (int i = 0; i<num.length; i++){
-      num [i] = i+1;
+    // 要素数20の配列を宣言し、要素に0から5ずつ傘㎜して代入させる
+    int[] num = new int[20];
+    for (int i=0; i<num.length; i++){
+      num[i] = i * 5;
     }
-    for (int i: num){
-      System.out.print(i+",");
+    for (int m=0; m<num.length; m++){
+      System.out.print(num[m]);
+      if (m<num.length-1){
+        System.out.print(",");
+      }
     }
     System.out.println();
-    int counts =0;
-    for (int i = 0; i<num.length; i++){
-      if (num[i]%2==0){
+    // [0]~[10]の奇数のみカンマ区切りで表示
+    System.out.print("奇数:");
+    for (int i=0; i<=10; i++){
+      if (num[i]%2!=0){
         System.out.print(num[i]);
-        counts++;
-        if (i<num.length-1){
+        if (i<10-1){
           System.out.print(",");
         }
       }
     }
-    System.out.println("偶数の数は"+counts+"個です");
+    System.out.println();
+
+    // [11]~[19]の偶数のみカンマ区切りで表示
+    System.out.print("偶数:");
+    for (int i=11; i<=19; i++){
+      if (num[i]%2==0){
+        System.out.print(num[i]);
+        if (i<19-1){
+          System.out.print(",");
+        }
+      }
+    }
   }
 }
