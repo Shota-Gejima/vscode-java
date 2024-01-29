@@ -1,14 +1,15 @@
 import java.util.Scanner;
 public class Main{  
   public static void main(String[] args){
+
     // 要素数20の配列を宣言し、要素に0から5ずつ傘㎜して代入させる
-    int[] num = new int[20];
-    for (int i=0; i<num.length; i++){
-      num[i] = i * 5;
+    int [] array = new int[20];
+    for (int i=0; i <array.length; i++){
+      array[i] = 5 * i;
     }
-    for (int m=0; m<num.length; m++){
-      System.out.print(num[m]);
-      if (m<num.length-1){
+    for (int i =0; i<array.length; i++){
+      System.out.print(array[i]);
+      if (i<(array.length-1)){
         System.out.print(",");
       }
     }
@@ -16,26 +17,26 @@ public class Main{
     // [0]~[10]の奇数のみカンマ区切りで表示
     System.out.print("奇数:");
     for (int i=0; i<=10; i++){
-      if (num[i]%2!=0){
-        System.out.print(num[i]);
+      if (array[i]%2!=0){
+        System.out.print(array[i]);
         if (i<10-1){
           System.out.print(",");
         }
       }
     }
     System.out.println();
-
     // [11]~[19]の偶数のみカンマ区切りで表示
     System.out.print("偶数:");
-    for (int i=11; i<=19; i++){
-      if (num[i]%2==0){
-        System.out.print(num[i]);
+    for (int i=11; i<19; i++){
+      if (array[i]%2==0){
+        System.out.print(array[i]);
         if (i<19-1){
           System.out.print(",");
         }
       }
     }
     System.out.println();
+    
     // 例題3 要素10の文字列配列を宣言し、配列に「apple」「orange」「banana」
     // 「grape」「kiwi」「mango」「peach」「strawberry」「blueberry」「raspberry
     // 」の果物の名前を代入してください。その後、配列の要素をカンマ区切りで表示するJavaのコードを書いてください。
