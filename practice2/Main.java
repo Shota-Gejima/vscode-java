@@ -40,10 +40,10 @@ public class Main{
     // 例題3 要素10の文字列配列を宣言し、配列に「apple」「orange」「banana」
     // 「grape」「kiwi」「mango」「peach」「strawberry」「blueberry」「raspberry
     // 」の果物の名前を代入してください。その後、配列の要素をカンマ区切りで表示するJavaのコードを書いてください。
-    String[] fruits = {"apple", "orange","banana","grape","kiwi","mango","peach","strawberry","blueberry","rasberry"};
-    for (int m=0; m<fruits.length; m++){
-      System.out.print(fruits[m]);
-      if (m<fruits.length-1){
+    String[] fruits = {"apple","orange","banana","grape","kiwi","mango","peach","strawberry","blueberry", "raspberry"};
+    for (int i=0; i<fruits.length; i++){
+      System.out.print(fruits[i]);
+      if (i<(fruits.length-1)){
         System.out.print(",");
       }
     }
