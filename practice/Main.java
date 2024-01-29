@@ -3,16 +3,16 @@ public class Main {
   public static void main(String[] args){
     // 問題1 以下の整数型の配列が与えられたとき、配列内の奇数の合計を計算して表示するJavaのプログラムを書いてください。
     // int[] numbers = {1, 5, 8, 3, 6, 9, 7, 2, 4, 11};
-    int[] numbers = {1, 5, 8, 3, 6, 9, 7, 2, 4, 11};
-    int total1=0;
+    int [] numbers = new int []{1, 5, 8, 3, 6, 9, 7, 2, 4, 11};
+    int totalNum=0;
     for (int i=0; i<numbers.length; i++){
       if (numbers[i]%2!=0){
-        total1 += numbers[i];
+        System.out.println(numbers[i]);
+        totalNum += numbers[i];
       }
-      System.out.println(numbers[i]);
-      System.out.println(total1);
     }
-
+    System.out.println(totalNum);
+    
     // 問題2 ユーザーに10個の整数を入力させ、それらの整数の合計と平均を計算して表示するJavaのプログラムを書いてください。
     int[] array = new int[10];
     for (int i=0; i<array.length; i++){
