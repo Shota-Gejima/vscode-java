@@ -43,7 +43,6 @@ public class Main {
 
     // 問題3 以下の文字列型の配列が与えられたとき、配列内の文字列の中で最も長い文字列を表示するJavaのプログラムを書いてください。
     // String[] words = {"apple", "banana", "kiwi", "strawberry", "grape"};
-    
     String[] words = {"apple", "banana", "kiwi", "strawberry", "grape"};
     String word = "";
     for (int i=0; i<words.length; i++){
@@ -52,5 +51,16 @@ public class Main {
       }
     }
     System.out.println(word);
+    // 問題4
+    String[] word1 = new String[3];
+    word1[0] = "{1,2,3}";
+    word1[1] = "{2,3,4}";
+    word1[2] = "{3,4,5}";
+    for (int i=0; i<word1.length; i++){
+      System.out.print(word1[i]);
+      if (i<word1.length-1){
+        System.out.print(",");
+      }
+    }
   }
 }
