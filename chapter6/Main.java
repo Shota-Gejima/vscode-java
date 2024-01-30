@@ -6,7 +6,7 @@ public class Main {
     Arrays.sort(heights);
     // 昇順 日本語も対応
     for (int i=0; i < heights.length; i++){
-      System.out.print(i);
+      System.out.print(heights[i]);
       System.out.print(",");
     }
     String [] japanese = {"い","う","お","あ","え"};

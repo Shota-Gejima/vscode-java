@@ -61,10 +61,10 @@ public class Main{
     System.out.println(userName + "さん、こんにちは！");
     // 例題7 ユーザーに身長（メートル）と体重（キログラム）を入力させ、BMI（Body Mass Index）を計算して表示するJavaのプログラムを書いてください。BMIの計算式はBMI = 体重 / (身長 * 身長)です。
     System.out.println("身長を入力してください");
-    double height = new Scanner(System.in).nextDouble();
+    double height = new java.util.Scanner(System.in).nextDouble();
     System.out.println("体重を入力してください");
-    double weight = new Scanner(System.in).nextDouble();
-    double bmi = weight/(height*height);
-    System.out.println("BMIの数値は"+bmi);
+    double weight = new java.util.Scanner(System.in).nextDouble();
+    double bmi = weight / (height*height);
+    System.out.println(bmi);
   }
 }
