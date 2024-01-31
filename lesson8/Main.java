@@ -1,9 +1,12 @@
-public class Main{
+public class Main {
   public static void main(String[] args){
-
     Cleric c = new Cleric();
+    c.hp=50;
+    c.mp=10;
+    c.dmg();
     c.selfAid();
-    int ans = c.pray(2);
-    System.out.println("実際に回復した量は" + ans + "ポイントで、最終mp数は" + c.mp );
+    System.out.println("聖職者のmpは"+c.mp);
+    int mpRecovery = c.pray(1);
+    System.out.println("聖職者のmpは"+c.mp+"になり、回復量は"+mpRecovery);
   }
 }
