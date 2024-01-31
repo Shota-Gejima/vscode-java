@@ -1,5 +1,3 @@
-package chapter8;
-
 public class Hero {
   // 属性の定義
   // フィールドの追加
