@@ -6,7 +6,7 @@ public class Main {
     c.dmg();
     c.selfAid();
     System.out.println("聖職者のmpは"+c.mp);
-    int mpRecovery = c.pray(1);
+    int mpRecovery = c.pray(4);
     System.out.println("聖職者のmpは"+c.mp+"になり、回復量は"+mpRecovery);
   }
 }
