@@ -1,5 +1,6 @@
 public class Main {
   public static void main(String[] args){
+    // アドレスを作成
     Sword s = new Sword();
     s.name = "炎の剣";
     s.damage = 10;
@@ -17,7 +18,12 @@ public class Main {
     Hero h3 = new Hero();
     h3.name = "ミナト";
     h3.hp = 100;
+    //s の中に入っているアドレスをh3.sword中に代入
     h3.sword = s;
     System.out.println("現在の武器は"+h3.sword.name+"です");
+    Wizard w = new Wizard();
+    System.out.println("h3のhpは、"+h3.hp);
+    int h3Hp = w.heal(h3);
+    System.out.println("回復後のh3のhpは、"+h3Hp);
   }
 }
