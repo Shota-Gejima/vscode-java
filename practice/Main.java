@@ -31,26 +31,26 @@ public class Main {
     int[] num = new int[10];
     int total=0;
     double avg =0;
-    for (int i=0; i<num.length; i++){
-      if (i!=9){
-        System.out.println("あと"+(9-i)+"回入力してください");
-        num[i] = new Scanner(System.in).nextInt();
-      }
-    }
-    for (int i=0; i<num.length; i++){
-      total += num[i];
-      avg = (double)total/num.length;
-    }
-    System.out.println("合計は"+total+"で、平均は"+avg);
+    // for (int i=0; i<num.length; i++){
+      // if (i!=9){
+        // System.out.println("あと"+(9-i)+"回入力してください");
+        // num[i] = new Scanner(System.in).nextInt();
+      // }
+    // }
+    // for (int i=0; i<num.length; i++){
+      // total += num[i];
+      // avg = (double)total/num.length;
+    // }
+    // System.out.println("合計は"+total+"で、平均は"+avg);
 
     // 問題3 以下の文字列型の配列が与えられたとき、配列内の文字列の中で最も長い文字列を表示するJavaのプログラムを書いてください。
     // String[] words = {"apple", "banana", "kiwi", "strawberry", "grape"};
     String[] words = {"apple", "banana", "kiwi", "strawberry", "grape"};
     String word = "";
     for (int i=0; i<words.length; i++){
-      if (words[i].length() > word.length()){
+      if (word.length()<words[i].length()){
         word = words[i];
-      }
+      } 
     }
     System.out.println(word);
     // 問題4
