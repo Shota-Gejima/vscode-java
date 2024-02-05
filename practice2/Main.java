@@ -1,35 +1,34 @@
 import java.util.Scanner;
 public class Main{  
   public static void main(String[] args){
-
+    // 例題2
     // 要素数20の配列を宣言し、要素に0から5ずつ傘㎜して代入させる
-    int [] array = new int[20];
-    for (int i=0; i <array.length; i++){
-      array[i] = 5 * i;
+    int [] num = new int[20];
+    for(int i=0; i<num.length; i++){
+      num[i] = i*5;
     }
-    for (int i =0; i<array.length; i++){
-      System.out.print(array[i]);
-      if (i<(array.length-1)){
+    for (int i=0; i<num.length; i++){
+      System.out.print(num[i]);
+      if (i<(num.length-1)){
         System.out.print(",");
       }
     }
     System.out.println();
     // [0]~[10]の奇数のみカンマ区切りで表示
-    System.out.print("奇数:");
-    for (int i=0; i<=10; i++){
-      if (array[i]%2!=0){
-        System.out.print(array[i]);
+    for (int i=0; i<10; i++){
+      if (num[i]%2!=0){
+        System.out.print(num[i]);
         if (i<10-1){
           System.out.print(",");
         }
       }
     }
     System.out.println();
+    
     // [11]~[19]の偶数のみカンマ区切りで表示
-    System.out.print("偶数:");
-    for (int i=11; i<19; i++){
-      if (array[i]%2==0){
-        System.out.print(array[i]);
+    for (int i=11; i<20; i++){
+      if (num[i]%2==0){
+        System.out.print(num[i]);
         if (i<19-1){
           System.out.print(",");
         }
