@@ -25,5 +25,10 @@ public class Main {
     System.out.println("h3のhpは、"+h3.hp);
     int h3Hp = w.heal(h3);
     System.out.println("回復後のh3のhpは、"+h3Hp);
+    Hero h4 = new Hero("アサカ");
+    System.out.println(h4.hp);
+    System.out.println(h4.name);
+    Hero h5 = new Hero();
+    System.out.println(h5.name);
   }
 }
