@@ -4,6 +4,10 @@ public class Main {
     h.run();
     SuperHero sh = new SuperHero();
     sh.run();
-    
+    sh.fly();
+    Matango m = new Matango();
+    sh.attack(m);
+    sh.land();
+    sh.attack(m);
   }
 }
