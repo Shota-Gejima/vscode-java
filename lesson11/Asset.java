@@ -13,4 +13,5 @@ public abstract class Asset {
   public int getPrice(){
     return this.price;
   }
+  
 }

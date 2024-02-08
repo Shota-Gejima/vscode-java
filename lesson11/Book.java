@@ -1,7 +1,6 @@
-public class Book extends TangibleAsset  {
-
+public  class Book extends TangibleAsset{
   String isbn;
-
+  
   // コンストラクタ
   public Book(String name, int price, String color, String isbn){
     super(name, price, color);
