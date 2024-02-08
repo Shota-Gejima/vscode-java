@@ -1,14 +1,12 @@
-public class Character{
-  String name = "スガワラ";
+// ⓶ 抽象メソッドを１つでも含むクラスは抽象クラスにしなければならない
+// 抽象クラスとして宣言  インスタンス化(new)できなくなる
+public abstract class Character {
+  String name;
   int hp;
-
   public void run(){
-    System.out.println(this.name + "は逃げ出した");
+    System.out.println(this.name + "は、逃げ出した");
   }
 
-  public void attack(Matango m){
-    System.out.println(this.name + "の攻撃!");
-    m.hp　= ??
-    System.out.println("敵に??ポイントのダメージを与えた！");
-  }
+  // ⓵ abstractを付けると抽象メソッドになる
+  public abstract void attack(Matango m);
 }
