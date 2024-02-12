@@ -1,4 +1,4 @@
-public class Monster {
+public abstract class Monster {
   int hp =50;
   String name;
 
@@ -6,6 +6,6 @@ public class Monster {
     this.name = name;
   }
 
-  public void run(){   }
+  public abstract void run();
   
 }
