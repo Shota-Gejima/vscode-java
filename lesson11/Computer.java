@@ -1,7 +1,7 @@
-public class Computer extends TangibleAsset{  
+public class Computer extends TangibleAsset{
   String makerName;
 
-  public Computer (String name, int price, String color, String makerName){
+  public Computer(String name, int price, String color, String makerName){
     super(name, price, color);
     this.makerName = makerName;
   }
@@ -10,4 +10,3 @@ public class Computer extends TangibleAsset{
     return this.makerName;
   }
 }
-

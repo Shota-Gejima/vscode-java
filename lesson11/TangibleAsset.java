@@ -6,15 +6,15 @@ public abstract class TangibleAsset extends Asset implements Thing{
     super(name, price);
     this.color = color;
   }
+  
   public String getColor(){
     return this.color;
   }
 
-  public void setWeight(double weight){
-    this.weight = weight;
-  }
-
   public double getWeight(){
     return this.weight;
+  }
+  public void setWeight(double weight){
+    this.weight = weight;
   }
 }

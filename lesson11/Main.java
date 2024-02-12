@@ -1,10 +1,11 @@
 public class Main {
   public static void main(String[] args){
-    Computer c = new Computer("PC",30000, "白", "Apple");
-    Book b = new Book("鬼滅の刃",500, "黒", "126465434");
-    c.setWeight(500);
-    b.setWeight(150);
-    System.out.println(c.getName()+c.getPrice()+c.getColor()+c.getMakerName()+c.getWeight());
-    System.out.println(b.getName()+b.getPrice()+b.getColor()+b.getIsbn()+b.getWeight());
+    Book b = new Book("スッキリ", 2000, "緑", "alhfafh");
+    Computer c = new Computer("windows", 25000, "銀", "lenovo");
+    b.setWeight(500);
+    c.setWeight(800);
+
+    System.out.println(b.getName()+ b.getPrice()+ b.getColor()+ b.getIsbn()+ b.getWeight());
+    System.out.println(c.getName()+ c.getPrice()+ c.getColor()+ c.getMakerName()+ c.getWeight());
   }
 }

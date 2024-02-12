@@ -4,7 +4,7 @@ public abstract class Asset {
 
   public Asset(String name, int price){
     this.name = name;
-    this.price  = price;
+    this.price = price;
   }
 
   public String getName(){
