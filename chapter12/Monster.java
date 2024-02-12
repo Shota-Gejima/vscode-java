@@ -1,8 +1,11 @@
-package chapter12;
-
-public abstract class Monster {
+public class Monster {
+  int hp =50;
   String name;
 
-  public abstract void run();
+  public Monster(String name){
+    this.name = name;
+  }
+
+  public void run(){   }
   
 }

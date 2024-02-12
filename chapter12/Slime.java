@@ -1,8 +1,10 @@
-package chapter12;
+public class Slime extends Monster{
 
-public class Slime extends Monster {
-  public void run(){
-    System.out.println("スライムは、体をうねらせて逃げ出した!");
+  public Slime(String name){
+    super(name);
   }
-  
+
+  public void run(){
+    System.out.println(this.name+"は、体をうねらせて逃げた!");
+  }
 }

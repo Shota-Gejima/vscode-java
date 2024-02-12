@@ -1,7 +1,10 @@
-package chapter12;
+public class DeathBat extends Monster{
+  
+  public DeathBat(String name){
+    super(name);
+  }
 
-public class DeathBat extends Monster {
   public void run(){
-    System.out.println("地獄コウモリは、羽ばたいて逃げ出した！");
+    System.out.println(this.name+"は、羽ばたいて逃げた!");
   }
 }
