@@ -3,39 +3,38 @@ public class Main{
   public static void main(String[] args){
     // 例題2
     // 要素数20の配列を宣言し、要素に0から5ずつ傘㎜して代入させる
-    int [] num = new int[20];
-    for(int i=0; i<num.length; i++){
-      num[i] = i*5;
+    int array[] = new int [20];
+    for (int i=0; i<array.length; i++){
+      array[i] = i*5;
     }
-    for (int i=0; i<num.length; i++){
-      System.out.print(num[i]);
-      if (i<(num.length-1)){
+
+    for (int i=0; i<array.length; i++){
+      System.out.print(array[i]);
+      if (i!=19){
         System.out.print(",");
       }
     }
     System.out.println();
     // [0]~[10]の奇数のみカンマ区切りで表示
-    for (int i=0; i<10; i++){
-      if (num[i]%2!=0){
-        System.out.print(num[i]);
-        if (i<10-1){
+    for (int i=0; i<=10; i++){
+      if (array[i]%2!=0){
+        System.out.print(array[i]);
+        if (i!=10-1){
           System.out.print(",");
         }
       }
     }
     System.out.println();
-    
     // [11]~[19]の偶数のみカンマ区切りで表示
-    for (int i=11; i<20; i++){
-      if (num[i]%2==0){
-        System.out.print(num[i]);
-        if (i<19-1){
+    for (int i=11; i<=19; i++){
+      if (array[i]%2==0){
+        System.out.print(array[i]);
+        if (i!=19-1){
           System.out.print(",");
         }
       }
     }
     System.out.println();
-    
     // 例題3 要素10の文字列配列を宣言し、配列に「apple」「orange」「banana」
     // 「grape」「kiwi」「mango」「peach」「strawberry」「blueberry」「raspberry
     // 」の果物の名前を代入してください。その後、配列の要素をカンマ区切りで表示するJavaのコードを書いてください。
