@@ -50,19 +50,20 @@ public class Main{
     int num1 = 5; int num2 = 10;
     System.out.println("num1+num2="+ (num1 + num2));
     // 例題5 半径が 3.0 の円の面積を計算し、結果を表示するJavaのコードを書いてください。円周率は3.14とします。
-    final double PI = (int)3.14;
+    final double PI = 3.14;
     double radius = 3.0;
-    System.out.println("半径3.0の円の面積は"+radius*radius*PI);
+    double circleArea = radius*radius*PI;
+    System.out.println("円の面積は"+circleArea+"です");
+
     // 例題6 ユーザーに名前を尋ね、入力された名前を使って挨拶メッセージを表示するJavaのコードを書いてください。
-    System.out.println("名前を教えて下さい");
-    String userName = new java.util.Scanner(System.in).nextLine();
-    System.out.println(userName + "さん、こんにちは！");
+    System.out.println("あなたの名前をおしえてください。");
+    String name = new java.util.Scanner(System.in).nextLine();
+    System.out.println("こんにちは！"+name+"さん。");
     // 例題7 ユーザーに身長（メートル）と体重（キログラム）を入力させ、BMI（Body Mass Index）を計算して表示するJavaのプログラムを書いてください。BMIの計算式はBMI = 体重 / (身長 * 身長)です。
-    System.out.println("身長を入力してください");
+    System.out.println("あなたの身長をおしえてください  ");
     double height = new java.util.Scanner(System.in).nextDouble();
-    System.out.println("体重を入力してください");
+    System.out.println("あなたの体重を教えて下さい");
     double weight = new java.util.Scanner(System.in).nextDouble();
-    double bmi = weight / (height*height);
-    System.out.println(bmi);
+    System.out.println("あなたのBMIは"+(weight/(height*height)));
   }
 }

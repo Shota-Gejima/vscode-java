@@ -23,5 +23,7 @@ public class Main {
     // コード2-14
     int r = new java.util.Random().nextInt(4);
     System.out.println(r);
+    String name = new java.util.Scanner(System.in).nextLine().trim();
+    System.out.println((String)name);
   }
 }
