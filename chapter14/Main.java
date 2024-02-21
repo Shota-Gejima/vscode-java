@@ -6,6 +6,9 @@ public class Main {
     Hero h2 = new Hero();
     h2.name = "ミナト";
     h2.hp = 100;
+    Hero.money = 1000;
+    System.out.println(Hero.money+","+h1.money);
+    h2.money = 5000;
 
     
     if (h1.equals(h2) == true){
@@ -13,5 +16,11 @@ public class Main {
     } else {
       System.out.println("違う内容です");
     }
+    System.out.println(Hero.money+","+h1.money);
+  
+    Hero.setRandomMoney();
+    System.out.println(Hero.money);
+    Hero h3 = new Hero();
+    System.out.println(h1.money);
   }
 }
